@@ -50,6 +50,10 @@ h1, h2, h3 {
     border-radius: 1rem;
     width: 90%;
     text-align: center;
+    border: none;
+}
+.button:hover{
+    cursor: pointer;
 }
 @media (min-width: 480px) {
     .button {
@@ -78,6 +82,20 @@ h1, h2, h3 {
     }
 }
 
+.w-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+    }
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+.flex {
+    display: flex;
+}
 .navegacion-principal a {
     display: block;
     text-align: center;
@@ -147,4 +165,50 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Contacto */
+.formulario {
+    background-color: var(--gray);
+    width: min( 60rem, 100% ); /* Utiliza el valor más pequeño */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.contenedor-campos{
+
+}
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.enviar .button {
+    width: 100%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    text-transform: uppercase;
 }
